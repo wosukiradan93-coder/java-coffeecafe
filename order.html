@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style> 
+    body{
+        margin: 0;
+        padding: 0;
+         height: 500px;
+    background-image: url(WhatsApp\ Image\ 2026-05-06\ at\ 11.11.10.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover; 
+background-color: solid brown ;
+    color:whitesmoke;
+
+}
+   .navbar ul{
+    list-style-type: none;
+    background-color: #808080;
+    
+    padding: 0%;
+    margin: 0%;
+     overflow: hidden;
+}
+.navbar a{
+    color:blueviolet;
+    text-decoration: none;
+    padding: 20px;
+    display:block;
+    text-align: center;
+}
+.navbar li{
+    float: left;}
+
+    .container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    
+   
+}
+.box1{
+    height: 100px;
+   
+background-color: blueviolet;
+}
+.box2{ 
+   background-image: url(WhatsApp\ Image\ 2026-05-06\ at\ 11.11.10\ \(1\).jpeg);
+   background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover; 
+background-color: solid brown ;
+    color:black;
+
+}
+
+.box3{
+   
+    height: 200px;
+    background-color:rgba(113, 44, 6, 0.843) ;color:aquamarine;
+    
+
+}
+.button{background-color: blueviolet;}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">
+        
+   
+    <nav class="navbar">
+        <ul>
+       <li><a href="index.html">index</a></li>
+        <li><a href="about us.html">About us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+    <div class="box2">
+        <h1 >CoffeeOrder</h1>
+         
+        <form action="index.php" method="post">
+            <p id="paragraph"></p>
+
+        <div>
+        <label for="Your Name">Your Name</label >
+        <input type="your Name" id="Your Name" minlength="6" maxlength="20" placeholder="Wosukira Dan" required>
+        </div>
+
+        <br >
+
+        <div>
+         <label for="Date & Time">Date & Time</label >
+        <input type="date" id="Date & Time" placeholder="">
+       </div>
+        <br>
+
+         <div>
+        <label for="QUANTITY">QUANTITY</label >
+        <input type="number" id="QUANTITY" name="QUANTITY" minlength="1" required>
+        </div>
+        
+
+        <br>
+
+         <div>
+        <label for="clients">clients</label >
+        <input type="number" id="clients" name="clients">
+         </div>
+
+        <br>
+
+
+
+         <div>
+         <label for="email">email</label >
+        <input type="email " id="email" placeholder="coffeecafe@gmail.com" required>
+        </div>
+
+        <br>
+
+
+         <div>
+         <label for="Mr">Mr.</label>
+        <input type="radio" id="Mr" value="Mr" title="name">
+        <label for="Ms">Ms.</label>
+        <input type="radio" id="Ms" value="Ms" title="name">
+        </div>
+        <br>
+        <div>
+            <label for="payment">Payment</label>
+            <select id="payment" name="payment">
+                <option value="visa">visacard</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+
+     <p id="paragraph"></p>
+    <button  onclick="Clickme()">PLACE YOUR ORDER</button>
+     </form>
+    </div>
+
+    <div class="box3">
+        <hr>
+        <p> We don't charge for delivery</p>
+        <p>We delivery it safe to you lovely clients.</p>
+        &copy;copyright
+
+    </div>
+
+
+
+
+
+
+</div>
+
+    
+</body>
+</html>
